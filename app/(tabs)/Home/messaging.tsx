@@ -4,12 +4,12 @@ import { View, Text, TextInput, Button, FlatList, StyleSheet, KeyboardAvoidingVi
 
 const questions = [
   "What is your name?",
-  "How old are you?",
+  "How old are you? ",
   "What is your favorite color?",
   "What is your hobby?"
 ];
 
-const ChatBotScreen = () => {
+function ChatBotScreen () {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [messages, setMessages] = useState([{ text: questions[0], fromBot: true }]);
   const [inputText, setInputText] = useState('');
